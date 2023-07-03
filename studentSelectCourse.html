@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>studentSelectCourse</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./selectCourse.css">
+</head>
+
+<body>
+    <div class="header">
+
+        <h1>呱呱大學</h1>
+        <h2>學生課務系統</h2>
+    </div>
+
+    <div>
+
+        <div class="curriculumDiv1">
+
+
+            <img src="https://taleem-edu.com/wp-content/uploads/curriculum.png" id="curriculum" alt="課表查詢">
+
+            <div class="curriculumDiv2">
+                <h5 class="curriculumH5">課程總覽</h5>
+                <div class="input-group flex-nowrap" id="curriculumIdDiv">
+                    <span class="input-group-text curriculumId" id="addon-wrapping">學號</span>
+                    <input type="text" class="form-control" id="curriculumInput" placeholder="ID" aria-label="Username"
+                        aria-describedby="addon-wrapping">
+                </div>
+
+                <p class="curriculumP">
+                    <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseWidthExample" aria-expanded="false"
+                        aria-controls="collapseWidthExample" id="curriculumBtn">
+                        查詢
+                    </button>
+                </p>
+                <div id="selectStudent"></div>
+            </div>
+
+            <div id="selectTableDiv">
+                <table class="table table-sm" id="selectTable">
+                    <thead>
+                        <tr>
+                            <th scope="col">課程代碼</th>
+                            <th scope="col">課程名稱</th>
+                            <th scope="col">課程星期</th>
+                            <th scope="col">開始時間</th>
+                            <th scope="col">結束時間</th>
+                            <th scope="col">課程學分</th>
+                        </tr>
+                    </thead>
+                    <tbody id="curriculumResult">
+                        <tr>
+                            <th scope="row"></th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div id="courseSelectDiv">
+
+        <div class="selectStudentDiv">
+
+            <h5 class="courseSelectH5">課程加退選</h5>
+
+            <div class="btn-group dropend" id="selectDropdownBtn">
+                <button type="button" class="btn btn-outline-secondary" id="selectDropdownBtn1">選課</button>
+                <button type="button" class="btn btn-outline-secondary" id="selectDropdownBtn2">加選</button>
+                <button type="button" class="btn btn-outline-danger" id="selectDropdownBtn3">退選</button>
+
+            </div>
+
+        </div>
+
+        <div>
+
+            <div class="input-group mb-3" id="selectStudentID">
+                <input type="text" class="form-control" id="selectStudentInputId" placeholder="ID"
+                    aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <span class="input-group-text" id="basic-addon2">學號</span>
+            </div>
+
+            <div class="input-group mb-3" id="selectCourseID">
+                <input type="text" class="form-control" id="selectInputCourseCode" placeholder="Course Code"
+                    aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <span class="input-group-text" id="basic-addon2">課程代碼</span>
+            </div>
+            <div id="selectStudentInfo"></div>
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/000/105/472/small_2x/free-mind-map-vector.png"
+                id="curriculum2" alt="加退選">
+        </div>
+
+    </div>
+
+
+
+    <div class="footer">
+        <br>
+        <p>電話：212164313</p>
+        <p>地址：呱呱呱市呱呱路呱呱呱號</p>
+    </div>
+
+    <script src="./studentSelectCourse.js"></script>
+</body>
+
+</html>

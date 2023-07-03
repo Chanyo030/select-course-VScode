@@ -1,0 +1,81 @@
+#courseDiv1 {
+    display: flex;
+    justify-content: center;
+
+    #courseDiv2 {
+        width: 490px;
+        margin-top: 40px;
+
+        margin-bottom: 100px;
+
+        #addCourseDiv {
+            position: relative;
+            top: 20px;
+
+            #addCourseBtn {
+                position: relative;
+                left: 75%;
+            }
+
+        }
+
+        #updateCourseDiv {
+            position: relative;
+            top: 50px;
+
+            #updateCourseBtn {
+                position: relative;
+                left: 75%;
+            }
+
+        }
+
+        #deleteCourseDiv {
+            position: relative;
+            top: 80px;
+
+            #deleteCourseBtn {
+                position: relative;
+                left: 75%;
+            }
+        }
+
+    }
+
+    #courseDiv3 {
+        width: 800px;
+        margin-top: 40px;
+
+        #searchNav {
+
+            position: relative;
+            right: 50px;
+
+        }
+
+
+        #courseTable {
+            position: relative;
+            top: 40px;
+            right: 50px;
+        }
+
+        #searchDiv {
+            #searchNav {
+                background-color: #e3f2fd !important;
+
+                #searchIdInput {
+                    position: relative;
+                    right: 20px;
+                }
+
+                #searchIdBtn {
+                    position: relative;
+                    right: 20px;
+                }
+            }
+        }
+    }
+
+
+}

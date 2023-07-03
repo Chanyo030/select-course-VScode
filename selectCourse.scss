@@ -1,0 +1,21 @@
+@import "./node_modules/bootstrap/scss/functions";
+
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+
+@import "./stylesheet/helper/variables";
+
+@import "./stylesheet/page/studentIndex";
+
+@import "./stylesheet/page/student";
+
+@import "./stylesheet/page/studentSelectCourse";
+
+@import "./stylesheet/page/teacher";
+
+@import "./stylesheet/page/course";
+
+@import "./stylesheet/page/studentMange";
+
+@import "./stylesheet/page/index";
+
+@import "./stylesheet/layout/layout";

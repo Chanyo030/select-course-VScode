@@ -1,0 +1,44 @@
+.header {
+
+    height: 180px;
+    background-color: rgb(129, 187, 227);
+
+    padding-top: 40px;
+    padding-left: 40px;
+
+    h1 {
+        color: rgba(26, 25, 25, 0.81);
+    }
+
+    h2 {
+        color: rgba(26, 25, 25, 0.81);
+        padding-left: 12%;
+    }
+
+}
+
+.courseCord {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+
+    .courseCord1 {
+        position: relative;
+        right: 100px;
+    }
+
+    .courseCord2 {
+        position: relative;
+        left: 100px;
+    }
+
+
+}
+
+.footer {
+    height: 120px;
+    background-color: rgb(129, 187, 227);
+    position: relative;
+    top: 40px;
+    padding-left: 40px;
+}

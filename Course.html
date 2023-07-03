@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course</title>
+
+    <link rel="stylesheet" href="./selectCourse.css">
+</head>
+
+<body>
+    <div class="header">
+
+        <h1>呱呱大學</h1>
+        <h2>課務管理</h2>
+    </div>
+
+    <div id="courseDiv1">
+
+        <div id="courseDiv2">
+            <div class="card w-50" id="addCourseDiv">
+                <div class="card-body">
+                    <h5 class="card-title">新增課程</h5>
+                    <div class="input-group input-group-sm mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">課程代碼</span>
+                        <input type="text" id="course_code1" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-sm">
+                    </div>
+                    <div class="input-group input-group-sm mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">課程名稱</span>
+                        <input type="text" id="course_name1" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-sm">
+                    </div>
+                    <div class="input-group input-group-sm mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">課程星期</span>
+                        <input type="text" id="course_day1" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-sm">
+                    </div>
+                    <div class="input-group input-group-sm mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">開始時間</span>
+                        <input type="text" id="start_time1" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-sm" type="datetime-local">
+                    </div>
+                    <div class="input-group input-group-sm mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">結束時間</span>
+                        <input type="text" id="end_time1" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-sm" type="datetime-local">
+                    </div>
+                    <div class="input-group input-group-sm mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">課程學分</span>
+                        <input type="text" id="units1" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-sm">
+                    </div>
+                    <button type="button" class="btn btn-secondary" id="addCourseBtn">新增</button>
+                    <div id="addCourseInfo"></div>
+                </div>
+            </div>
+
+            <div class="card w-50" id="updateCourseDiv">
+                <div class="card-body">
+                    <h5 class="card-title">修改課程</h5>
+                    <div class="input-group input-group-sm mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">課程代碼</span>
+                        <input type="text" id="course_code2" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-sm">
+                    </div>
+                    <div class="input-group input-group-sm mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">課程名稱</span>
+                        <input type="text" id="course_name2" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-sm">
+                    </div>
+                    <div class="input-group input-group-sm mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">課程星期</span>
+                        <input type="text" id="course_day2" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-sm">
+                    </div>
+                    <div class="input-group input-group-sm mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">開始時間</span>
+                        <input type="text" id="start_time2" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-sm" type="datetime-local">
+                    </div>
+                    <div class="input-group input-group-sm mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-sm" type="datetime-local">結束時間</span>
+                        <input type="text" id="end_time2" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-sm" type="datetime-local">
+                    </div>
+                    <div class="input-group input-group-sm mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">課程學分</span>
+                        <input type="text" id="units2" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-sm">
+                    </div>
+                    <button type="button" class="btn btn-secondary" id="updateCourseBtn">修改</button>
+                    <div id="updateCourseInfo"></div>
+                </div>
+            </div>
+
+            <div class="card w-50" id="deleteCourseDiv">
+                <div class="card-body">
+                    <h5 class="card-title">刪除課程</h5>
+                    <div class="input-group input-group-sm mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">課程代碼</span>
+                        <input type="text" id="course_code3" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-sm">
+                    </div>
+                    <button type="button" class="btn btn-secondary" id="deleteCourseBtn">刪除</button>
+                    <div id="deleteCourseInfo"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="courseDiv3">
+            <div id="searchDiv">
+                <nav class="navbar navbar-light bg-light" id="searchNav">
+                    <div class="container-fluid">
+                        <a class="navbar-brand">課程總覽</a>
+                        <form class="d-flex">
+                            <input class="form-control me-2" id="searchIdInput" type="search" placeholder="課程代碼"
+                                aria-label="Search">
+                            <button class="btn btn-outline-primary" id="searchIdBtn" type="button">search</button>
+                            <input class="form-control me-2" id="searchNameInput" type="search" placeholder="課程名稱"
+                                aria-label="Search">
+                            <button class="btn btn-outline-primary" id="searchNameBtn" type="button">search</button>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+
+            <div>
+                <table class="table" id="courseTable">
+                    <thead>
+                        <tr>
+                            <th scope="col">課程代碼</th>
+                            <th scope="col">課程名稱</th>
+                            <th scope="col">課程星期</th>
+                            <th scope="col">開始時間</th>
+                            <th scope="col">結束時間</th>
+                            <th scope="col">學分</th>
+                        </tr>
+                    </thead>
+                    <tbody id="courseTableInfo">
+                        <tr>
+                            <th scope="row"></th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <br>
+        <p>電話：212164313</p>
+        <p>地址：呱呱呱市呱呱路呱呱呱號</p>
+    </div>
+
+    <script src="./course.js"></script>
+
+</body>
+
+</html>

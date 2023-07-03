@@ -1,0 +1,68 @@
+.businessCard {
+    width: 50%;
+    height: 500px;
+    border-radius: 50px;
+    background-color: rgba(129, 188, 227, 0.397);
+
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding-top: 70px;
+    position: absolute;
+
+    .img1 {
+        border-radius: 30px;
+        max-width: 200px;
+        max-height: 200px;
+        position: relative;
+        left: 70px;
+    }
+
+    .img2 {
+        border-radius: 30px;
+        max-width: 100px;
+        max-height: 150px;
+        position: relative;
+        left: 130px;
+    }
+
+    .img3 {
+        border-radius: 30px;
+        max-width: 100px;
+        max-height: 150px;
+        position: relative;
+        left: 36px;
+    }
+
+    .img4 {
+        border-radius: 30px;
+        max-width: 100px;
+        max-height: 150px;
+        position: relative;
+        left: 25px;
+    }
+
+    .img5 {
+        border-radius: 30px;
+        max-width: 100px;
+        max-height: 150px;
+        position: relative;
+        left: 12px;
+    }
+
+
+    .studentId,
+    .studentName {
+        width: 80%;
+        position: relative;
+        left: 100px;
+        top: 30px;
+    }
+
+}
+
+#btn1 {
+    position: absolute;
+    left: 46%;
+    top: 50px;
+}

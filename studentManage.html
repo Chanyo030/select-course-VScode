@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Manage</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./selectCourse.css">
+</head>
+
+<body>
+    <div class="header">
+
+        <h1>呱呱大學</h1>
+        <h2>學生管理系統</h2>
+    </div>
+
+    <div id="studentMangeDiv1">
+
+        <div id="studentMangeDiv2">
+
+            <div class="card w-50" id="addStudentDiv">
+                <div class="card-body">
+                    <h5 class="card-title">新增學生資訊</h5>
+                    <div class="input-group input-group-sm mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">學號</span>
+                        <input type="text" id="student_Id1" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-sm">
+                    </div>
+                    <div class="input-group input-group-sm mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">姓名</span>
+                        <input type="text" id="student_Name1" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-sm">
+                    </div>
+                    <button type="button" class="btn btn-secondary" id="addStudentBtn">新增</button>
+                    <div id="addStudentDivInfo"></div>
+                </div>
+            </div>
+
+            <div class="card w-50" id="updateStudentDiv">
+                <div class="card-body">
+                    <h5 class="card-title">修改學生資訊</h5>
+                    <div class="input-group input-group-sm mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">學號</span>
+                        <input type="text" id="student_Id2" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-sm">
+                    </div>
+                    <div class="input-group input-group-sm mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">姓名</span>
+                        <input type="text" id="student_Name2" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-sm">
+                    </div>
+                    <button type="button" class="btn btn-secondary" id="updateStudentBtn">修改</button>
+                    <div id="updateStudentInfo"></div>
+                </div>
+            </div>
+
+            <div class="card w-50" id="deleteStudentDiv">
+                <div class="card-body">
+                    <h5 class="card-title">刪除學生資訊</h5>
+                    <div class="input-group input-group-sm mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">學號</span>
+                        <input type="text" id="student_Id3" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-sm">
+                    </div>
+                    <div class="input-group input-group-sm mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">姓名</span>
+                        <input type="text" id="student_Name3" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-sm">
+                    </div>
+                    <button type="button" class="btn btn-secondary" id="deleteStudentBtn">刪除</button>
+                    <div id="deleteStudentInfo"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="studentMangeDiv3">
+            <div id="studentInfoDiv">
+                <nav class="navbar navbar-light bg-light" id="studentInfoNav">
+                    <div class="container-fluid">
+                        <a class="navbar-brand">學生總覽</a>
+                        <form class="d-flex">
+                            <input class="form-control me-2" id="studentIdInfoInput" type="search" placeholder="學號"
+                                aria-label="Search">
+                            <button class="btn btn-outline-primary" id="studentIdInfoBtn" type="button">search</button>
+                            <input class="form-control me-2" id="studentNameInfoInput" type="search" placeholder="姓名"
+                                aria-label="Search">
+                            <button class="btn btn-outline-primary" id="studentNameInfoBtn"
+                                type="button">search</button>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+
+            <div>
+                <table class="table" id="studentMangeTable">
+                    <thead>
+                        <tr>
+                            <th scope="col">學號</th>
+                            <th scope="col">姓名</th>
+                            <th scope="col">課程資訊</th>
+                        </tr>
+                    </thead>
+                    <tbody id="studentMangeTableInfo">
+                        <tr>
+                            <th scope="row"></th>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <br>
+        <p>電話：212164313</p>
+        <p>地址：呱呱呱市呱呱路呱呱呱號</p>
+    </div>
+
+    <script src="./studentMange.js"></script>
+
+</body>
+
+</html>

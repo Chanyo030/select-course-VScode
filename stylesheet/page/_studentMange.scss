@@ -1,0 +1,81 @@
+#studentMangeDiv1 {
+    display: flex;
+    justify-content: center;
+
+    #studentMangeDiv2 {
+        width: 490px;
+        margin-top: 40px;
+
+        margin-bottom: 100px;
+
+        #addStudentDiv {
+            position: relative;
+            top: 20px;
+
+            #addStudentBtn {
+                position: relative;
+                left: 75%;
+            }
+
+        }
+
+        #updateStudentDiv {
+            position: relative;
+            top: 50px;
+
+            #updateStudentBtn {
+                position: relative;
+                left: 75%;
+            }
+
+        }
+
+        #deleteStudentDiv {
+            position: relative;
+            top: 80px;
+
+            #deleteStudentBtn {
+                position: relative;
+                left: 75%;
+            }
+        }
+
+    }
+
+    #studentMangeDiv3 {
+        width: 800px;
+        margin-top: 40px;
+
+        #studentInfoNav {
+
+            position: relative;
+            right: 50px;
+
+        }
+
+
+        #studentMangeTable {
+            position: relative;
+            top: 40px;
+            right: 50px;
+        }
+
+        #studentInfoDiv {
+            #studentInfoNav {
+                background-color: #e3f2fd !important;
+
+                #studentIdInfoInput {
+                    position: relative;
+                    right: 20px;
+                }
+
+                #studentIdInfoBtn {
+                    position: relative;
+                    right: 20px;
+                }
+            }
+        }
+    }
+
+
+}
